@@ -14,5 +14,35 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('partials.error');
+});
+
+// tours
+Route::group(['prefix' => 'tour'], function () {
+    return view('partials.error');
+});
+
+//treks
+Route::group(['prefix' => 'trek'], function () {
+    Route::get('/', function () {
+        return view('partials.error');
+    });
+
+});
+
+//safaris
+
+
+//expeditions
+
+//contact-us
+Route::get('/contact-us', function () {
+    return view('components.contact.contact-us');
+});
+Route::get('/error', function () {
+    return view('partials.error');
+});
+
+Route::get('/layout', function () {
+    return view('partials.layout');
 });
