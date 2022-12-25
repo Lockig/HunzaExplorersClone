@@ -9,4 +9,8 @@ mix.styles('resources/css/app.css','public/assets/css/app.css').version();
 
 
 //js
-mix.scripts('resources/js/app.js','public/assets/js/app.js').version();
+mix.js('resources/js/app.js','public/assets/js/app.js').version();
+// mix.js('node_modules/owl.carousel/dist/owl.carousel.min.js','').version();
+
+//font-awesome
+mix.copy('node_modules/@fortawesome/fontawesome-free/webfonts','public/assets/fonts');

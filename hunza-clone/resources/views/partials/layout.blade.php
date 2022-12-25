@@ -4,17 +4,14 @@
 <head>
     <base href="">
     <meta charset="utf-8"/>
-    <title>@yield('title','Dashboard')</title>
-    <meta name="description"
-          content="Metronic admin dashboard live demo. Check out all the features of the admin panel. A large number of settings, additional services and widgets."/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <link rel="canonical" href="https://keenthemes.com/metronic"/>
+    <title>@yield('title','Hunza Explorers')</title>
+
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"/>
     <!--end::Fonts-->
     <link href="{{asset('assets/css/bootstrap.css')}}" rel="stylesheet" type="text/css"/>
     <!--begin:CSS-->
-        <link href="{{asset('assets/css/app.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{asset('assets/css/test.css')}}" rel="stylesheet" type="text/css"/>
     <!--end:CSS-->
 
     @yield('css')
@@ -26,31 +23,36 @@
 <!--begin::Header Mobile-->
 
 <!--end::Header Mobile-->
-<div class="d-flex flex-column">
-    <!--begin::Page-->
-    <div class="d-flex flex-row">
-        <!--begin::Aside-->
-
-        <!--end::Aside-->
-        <!--begin::Wrapper-->
-        <div class="d-flex flex-column w-100">
-            <!--begin::Header-->
-            @include('partials.header')
-            <!--end::Header-->
-            <!--begin::Content-->
-            @yield('content')
-            <!--end::Content-->
-            <!--begin::Footer-->
-            @include('partials.footer')
-            <!--end::Footer-->
-        </div>
-        <!--end::Wrapper-->
+{{--<div class="d-flex flex-column">--}}
+<!--begin::Page-->
+{{--    <div class="d-flex flex-row">--}}
+<!--begin::Aside-->
+<div id="wrapper">
+    <!--end::Aside-->
+    <!--begin::Wrapper-->
+    {{--        <div class="d-flex flex-column w-100">--}}
+    <!--begin::Header-->
+    <div id="header__wrapper" class="position-relative ">
+        @include('partials.header')
+        @include('partials.mobile-header')
     </div>
-    <!--end::Page-->
+    <!--end::Header-->
+    <!--begin::Content-->
+    <div id="content" class="w-100">
+        @yield('content')
+    </div>
+    <!--end::Content-->
+    <!--begin::Footer-->
+    @include('partials.footer')
+    <!--end::Footer-->
+</div>
+<!--end::Wrapper-->
+{{--    </div>--}}
+<!--end::Page-->
 </div>
 
 
-<script src="{{asset('assets/js/app.jsh')}}"></script>
+<script src="{{asset('assets/js/app.js')}}"></script>
 @yield('script')
 <!--end:Javascript-->
 
