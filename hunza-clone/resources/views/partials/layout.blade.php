@@ -27,23 +27,27 @@
 <!--begin::Page-->
 {{--    <div class="d-flex flex-row">--}}
 <!--begin::Aside-->
-<div id="wrapper">
+<div id="wrapper" class="w-100 m-0">
+    <div class="d-none body_overlay position-fixed top-0 left-0 w-100 h-120 z-9002" style="background: rgba(0,0,0,.6);"></div>
     <!--end::Aside-->
     <!--begin::Wrapper-->
     {{--        <div class="d-flex flex-column w-100">--}}
     <!--begin::Header-->
-    <div id="header__wrapper" class="position-relative ">
+    <div id="header__wrapper" class="position-relative " style="background-color:#000119;">
         @include('partials.header')
         @include('partials.mobile-header')
     </div>
     <!--end::Header-->
     <!--begin::Content-->
-    <div id="content" class="w-100">
+    <div id="content" class="w-100 position-relative">
         @yield('content')
     </div>
     <!--end::Content-->
     <!--begin::Footer-->
-    @include('partials.footer')
+    <footer id="footer" style="color:#cccccc;">
+        @include('partials.footer')
+    </footer>
+
     <!--end::Footer-->
 </div>
 <!--end::Wrapper-->
