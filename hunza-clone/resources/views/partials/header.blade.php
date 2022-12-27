@@ -16,7 +16,8 @@
                         </li>
                         <li class="list-unstyled">
                             <i class="text-white fa fa-mail-bulk"></i>
-                            <a class="h6 text-white text-bold text-decoration-none" href="/">hunzaexplorers@gmail.com</a>
+                            <a class="h6 text-white text-bold text-decoration-none"
+                               href="/">hunzaexplorers@gmail.com</a>
                         </li>
                     </ul>
                 </div>
@@ -32,49 +33,51 @@
         </div>
     </div>
     <div id="top-bar" class="position-fixed d-block w-100 top-2">
-        <nav class="container px-0 mb-0 d-flex justify-content-between">
-            <div class="logo">
-                <a class="navbar-brand" href="#">
-                    <img src="{{asset('assets/images/icon/logo.png')}}" alt="images"/>
-                </a>
-            </div>
-            <div class="menu__wrapper d-sm-flex align-items-sm-center d-xl-block">
-{{--                @include('partials.mobile-header')--}}
-                <a class="hamburger responsive-menu-toggle d-block d-xl-none w-2 h-2 text-center z-200" href="#">
-                    <i class="fa fa-light fa-bars"></i>
-                </a>
-                <ul class="main-menu d-none d-xl-flex w-100 h-100 mb-0">
-                    <li class="d-flex justify-content-center align-items-center m-0">
-                        <a class="text-center" href=""><span>Home</span></a>
-                        <a class="menu__toggle" href="#"><i class="fa-thin fa-plus "></i></a>
-                        <ul class="d-none"></ul>
-                    </li>
-                    <li class="d-flex justify-content-center align-items-center m-0">
-                        <a class="text-center" href=""><span>Tours<span>explore the world</span></span></a>
-                        <a class="menu__toggle" href="#"><i class="fa-thin fa-plus "></i></a>
-                        <ul class="d-none"></ul>
-                    </li>
-                    <li class="d-flex justify-content-center align-items-center m-0">
-                        <a class="text-center" href=""><span>Trek<span>full of adventure</span></span></a>
-                        <a class="menu__toggle" href="#"><i class="fa-thin fa-plus "></i></a>
-                        <ul class="d-none"></ul>
-                    </li>
-                    <li class="d-flex justify-content-center align-items-center m-0">
-                        <a class="text-center" href=""><span>Safaris<span>explore remote valleys</span></span></a>
-                        <a class="menu__toggle" href="#"><i class="fa-thin fa-plus "></i></a>
-                        <ul class="d-none"></ul>
-                    </li>
-                    <li class="d-flex justify-content-center align-items-center m-0">
-                        <a class="text-center" href=""><span>Expeditions<span>mountaineering</span></span></a>
-                        <a class="menu__toggle" href="#"><i class="fa-thin fa-plus "></i></a>
-                        <ul class="d-none"></ul>
-                    </li>
-                    <li class="d-flex justify-content-center align-items-center m-0">
-                        <a href=""><span>Contact us</span></a>
-                        <a class="menu__toggle" href="#"><i class="fa-thin fa-plus "></i></a>
-                        <ul class="d-none"></ul>
-                    </li>
-                </ul>
+        <nav class="container px-0">
+            <div class="w-100 d-flex justify-content-between">
+                <div class="logo p-0">
+                    <a class="navbar-brand p-0" href="#">
+                        <img src="{{asset('assets/images/icon/logo.png')}}" alt="images"/>
+                    </a>
+                </div>
+                <div class="menu__wrapper d-sm-flex align-items-sm-center d-xl-block">
+                    {{--                @include('partials.mobile-header')--}}
+                    <a class="hamburger responsive-menu-toggle d-block d-xl-none w-2 h-2 text-center z-200" href="#">
+                        <i class="fa fa-light fa-bars"></i>
+                    </a>
+                    <ul class="main-menu d-none d-xl-flex mb-0">
+                        <li class="d-flex justify-content-center align-items-center m-0 position-relative z-203">
+                            <a class="text-center" href=""><span>Home</span></a>
+                            <a class="menu__toggle" href="#"><i class="fa-thin fa-plus "></i></a>
+                            <ul class="d-none"></ul>
+                        </li>
+                        <li class="d-flex justify-content-center align-items-center m-0 position-relative z-203">
+                            <a class="text-center" href=""><span>Tours<span class="description">explore the world</span></span></a>
+                            <a class="menu__toggle" href="#"><i class="fa-thin fa-plus "></i></a>
+                            <ul class="d-none"></ul>
+                        </li>
+                        <li class="d-block justify-content-center align-items-center m-0 position-relative z-203">
+                            <a class="text-center" href=""><span>Trek<span class="description">full of adventure</span></span></a>
+                            <a class="menu__toggle" href="#"><i class="fa-thin fa-plus "></i></a>
+                            <ul class="d-none"></ul>
+                        </li>
+                        <li class="d-block justify-content-center align-items-center m-0 position-relative z-203">
+                            <a class="text-center" href=""><span>Safaris<span class="description">explore remote valleys</span></span></a>
+                            <a class="menu__toggle" href="#"><i class="fa-thin fa-plus "></i></a>
+                            <ul class="d-none"></ul>
+                        </li>
+                        <li class="d-block justify-content-center align-items-center m-0 position-relative z-203">
+                            <a class="text-center" href=""><span>Expeditions<span class="description">mountaineering</span></span></a>
+                            <a class="menu__toggle" href="#"><i class="fa-thin fa-plus "></i></a>
+                            <ul class="d-none"></ul>
+                        </li>
+                        <li class="d-block justify-content-center align-items-center m-0 position-relative z-203">
+                            <a href=""><span>Contact us</span></a>
+                            <a class="menu__toggle" href="#"><i class="fa-thin fa-plus "></i></a>
+                            <ul class="d-none"></ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </div>

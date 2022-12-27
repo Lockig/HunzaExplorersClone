@@ -9,7 +9,11 @@ mix.styles('resources/css/app.css','public/assets/css/app.css').version();
 
 
 //js
-mix.js('resources/js/app.js','public/assets/js/app.js').version();
+mix.js([
+    'node_modules/jquery/dist/jquery.js',
+    'resources/js/bootstrap.js',
+    'resources/js/app.js',
+],'public/assets/js/app.js').version();
 // mix.js('node_modules/owl.carousel/dist/owl.carousel.min.js','').version();
 
 //font-awesome

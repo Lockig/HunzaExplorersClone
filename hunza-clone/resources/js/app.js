@@ -1,6 +1,6 @@
-import './bootstrap';
-import 'owl.carousel';
 
+// import 'owl.carousel';
+var $ = require('jquery');
 
 var App = function(){
     var _mobileMenuToggle = function(){
@@ -24,6 +24,6 @@ var App = function(){
 }
 
 
-$(document).ready(function(){
-    App.initCore();
-})
+document.addEventListener('DOMContentLoaded', function() {
+    return App.initCore();
+});
