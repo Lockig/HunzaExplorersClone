@@ -4,6 +4,7 @@ var $ = require('jquery');
 
 var App = function(){
     var _mobileMenuToggle = function(){
+        console.log('hello');
         $('.hamburger').on('click',function(e){
             console.log('toggle side bar');
             e.preventDefault();
@@ -23,7 +24,9 @@ var App = function(){
     }
 }
 
-
-document.addEventListener('DOMContentLoaded', function() {
+$(document).ready(function(){
     return App.initCore();
-});
+})
+// document.addEventListener('DOMContentLoaded', function() {
+//     return App.initCore;
+// });

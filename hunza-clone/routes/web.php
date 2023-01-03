@@ -41,7 +41,7 @@ Route::group(['prefix' => 'afghanistan'], function () {
 //treks
 Route::group(['prefix' => 'trek'], function () {
     Route::get('/', function () {return view('components.trek.trek');});
-    Route::get('/patundass', function () {return view('partials.error');});
+    Route::get('/patundass', function () {return view('components.trek.patundas');});
     Route::get('/batura', function () {return view('partials.error');});
     Route::get('/shimshalpamir', function () {return view('partials.error');});
     Route::get('/rakaposhi-patundass', function () {return view('partials.error');});

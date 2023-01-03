@@ -4,14 +4,15 @@
 <head>
     <base href="">
     <meta charset="utf-8"/>
-    <title>@yield('title','Hunza Explorers')</title>
+    <title>@yield('title','Discover Pakistan, Travelling')</title>
 
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"/>
     <!--end::Fonts-->
     <link href="{{asset('assets/css/bootstrap.css')}}" rel="stylesheet" type="text/css"/>
     <!--begin:CSS-->
-    <link href="{{asset('assets/css/test.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{asset('assets/css/app.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet" type="text/css"/>
     <!--end:CSS-->
 
     @yield('css')
@@ -33,7 +34,7 @@
     <!--begin::Wrapper-->
     {{--        <div class="d-flex flex-column w-100">--}}
     <!--begin::Header-->
-    <div id="header__wrapper" class="position-relative " style="background-color:#000119;">
+    <div id="header__wrapper" class="position-relative">
         @include('partials.header')
         @include('partials.mobile-header')
     </div>
@@ -44,7 +45,7 @@
     </div>
     <!--end::Content-->
     <!--begin::Footer-->
-    <footer id="footer" style="color:#cccccc;">
+    <footer id="footer" >
         @include('partials.footer')
     </footer>
 
@@ -53,8 +54,6 @@
 <!--end::Wrapper-->
 {{--    </div>--}}
 <!--end::Page-->
-</div>
-
 
 <script src="{{asset('assets/js/app.js')}}"></script>
 @yield('script')

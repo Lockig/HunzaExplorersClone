@@ -1,0 +1,84 @@
+//footer
+@import "variables.scss";
+@import "main";
+
+#footer {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: $footerBackgroundColor;
+    color: $footerTextPrimaryColor;
+    position: relative;
+    .footer__wrapper{
+        .row .col-inner {
+            h4 {
+                margin: 0 0 15px;
+                color: $secondaryTextColor;
+            }
+
+            ul {
+                padding: 5px 10px 5px 30px;
+                li {
+                    position: relative;
+                    color: $primaryColor;
+                    list-style-type: square !important;
+                    text-align: left;
+                    line-height: 25px;
+
+                    a {
+                        font-size: 14px;
+                        padding: 8px 0 9px 3px;
+                    }
+
+                    &:hover a {
+                        color: $primaryColor;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        border: solid rgba(0, 0, 0, .1);
+                        border-width: 0 0 1px;
+                        position: absolute;
+                        bottom: 0;
+                        left: -30px;
+                        width: 70px;
+                    }
+                }
+            }
+        }
+    }
+    .footer__copy {
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, .1);
+
+        .container .row {
+            padding-bottom: 20px;
+            padding-top: 30px;
+            min-height: 33px;
+        }
+
+        .copyright span {
+            font-size: 14px;
+            line-height: 25px;
+            color: var(--TextColorSecondary);
+        }
+
+        .footer__icons li {
+            display: inline-block;
+            margin-right: 6px;
+
+            a {
+                font-size: 15px;
+                line-height: 15px;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+}
