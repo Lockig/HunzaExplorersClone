@@ -1,5 +1,25 @@
 @import 'variables';
 
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024;
+
+@mixin mobile {
+    @media (min-width: $mobile-width) {
+        @content
+    }
+}
+@mixin tablet {
+    @media (min-width: $mobile-width) and (max-width: $desktop-width) {
+        @content
+    }
+}
+@mixin desktop {
+    @media (min-width: $mobile-width) {
+        @content
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -51,24 +71,26 @@ body {
 }
 
 
-
 .container {
     max-width: 1220px;
     height: auto !important;
-    margin:0 auto;
-    position:relative;
+    margin: 0 auto;
+    position: relative;
 
 }
-.column{
+
+.column {
     padding: 0 20px;
     overflow: hidden;
     margin-bottom: 0;
 }
-.col-inner{
+
+.col-inner {
     position: relative;
     margin: 0 12px 40px 12px;
 }
-h4{
+
+h4 {
     font-size: 21px;
     line-height: 25px;
     font-weight: 500;
