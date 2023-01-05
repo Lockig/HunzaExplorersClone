@@ -9,11 +9,13 @@ $desktop-width: 1024;
         @content
     }
 }
+
 @mixin tablet {
     @media (min-width: $mobile-width) and (max-width: $desktop-width) {
         @content
     }
 }
+
 @mixin desktop {
     @media (min-width: $mobile-width) {
         @content
@@ -43,6 +45,14 @@ ul, li {
 body {
     width: 100%;
     min-height: 100vh;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: 0;
+    @include tablet{
+        font-size: 13px;
+        line-height: 19px;
+    }
 }
 
 #wrapper {
@@ -52,21 +62,27 @@ body {
 .section {
     position: relative;
     box-sizing: border-box;
-
-    .section__wrapper {
-        max-width: 1220px;
-        margin: 0 auto;
-        height: auto !important;
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
+}
+.section__wrapper {
+    max-width: 1220px;
+    margin: 0 auto;
+    height: auto !important;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    @include tablet{
+        padding:0 33px !important;
+        max-width: 700px !important;
     }
+
 }
 
+
 .content__wrapper {
-    margin-bottom: 15px;
-    margin-right: 1%;
-    margin-left: 1%;
+    &.has-content{
+        margin-bottom: 15px;
+    }
+    margin: 0 1%;
     width: 98%;
 }
 
@@ -96,3 +112,4 @@ h4 {
     font-weight: 500;
     letter-spacing: 0;
 }
+

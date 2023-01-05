@@ -76,7 +76,7 @@
                             <a href="#" class="menu-toggle"><i class="fa fa-thin fa-plus"></i></a>
                         </li>
                         <li class="menu-item position-relative m-0 z-203">
-                            <a href=""><span>Home</span></a>
+                            <a href=""><span>Contact us</span></a>
                             <ul class="sub-menu d-none"></ul>
                         </li>
                     </ul>

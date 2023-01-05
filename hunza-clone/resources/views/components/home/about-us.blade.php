@@ -1,35 +1,8 @@
 @extends('partials.layout')
 
-@section('css')
-    <style>
-        .about-us__content {
-            width: 100%;
-            padding: 0 50px;
-            background-position: 0 0 !important;
-            background-repeat: no-repeat;
-            position: relative;
 
-            background-image: url({{asset('assets/images/background/bg-pages1.png')}});
-        }
-
-        .about-us .content {
-            padding-top: 35px;
-            padding-left: 7.5px;
-            padding-right: 7.5px;
-            width: 100%;
-        }
-
-        .content__wrapper--margin {
-            margin-bottom: 35px;
-        }
-
-        .list {
-            margin: -1px 0 -1px 0;
-        }
-    </style>
-@endsection
 @section('content')
-    <div class="about-us .section__wrapper">
+    <div class="about-us ">
         <div class="container w-100">
             <div class="about-us__content">
                 <div class="content">

@@ -28,11 +28,13 @@
 
             .contact-details ul {
                 color: hsla(0, 0%, 100%, .5);
-
                 li {
                     margin-right: 10px;
                     padding: 5px 0;
-
+                    &:hover a{
+                        text-decoration: underline !important;
+                        color: yellow !important;
+                    }
                     &:first-child span {
                         font-size: 14px;
                         line-height: 21px;
@@ -53,35 +55,38 @@
                 }
             }
 
-            #language {
-                ul {
-                    padding: 5px 0;
+            #language ul {
+                padding: 5px 0;
 
-                    li {
-                        &:first-child {
-                            display: inline-block;
-                            margin-right: 6px;
-                            padding-right: 6px;
-                            border-right: 1px solid hsla(0, 0%, 100%, .1);
-                        }
+                li {
+                    &:hover a{
+                        text-decoration: underline !important;
+                        color: yellow !important;
+                    }
+                    &:first-child {
+                        display: inline-block;
+                        margin-right: 6px;
+                        padding-right: 6px;
+                        border-right: 1px solid hsla(0, 0%, 100%, .1);
+                    }
 
-                        &:last-child {
-                            display: inline-block;
-                            margin-right: 0;
-                            padding-right: 0;
-                            border-right-width: 0;
-                        }
+                    &:last-child {
+                        display: inline-block;
+                        margin-right: 0;
+                        padding-right: 0;
+                        border-right-width: 0;
+                    }
 
-                        a {
-                            font-weight: bold;
-                            font-size: 14px;
-                        }
+                    a {
+                        font-weight: bold;
+                        font-size: 14px;
                     }
                 }
             }
         }
 
         #top-bar {
+            z-index: 30;
             top: 31px;
             left: 0;
             background: $primaryTextColor;
@@ -126,6 +131,7 @@
                         position: relative;
                         margin: 0;
                         z-index: 203;
+
                         &:first-child {
                             & > a:first-child {
                                 & > span {
@@ -169,12 +175,6 @@
                             }
                         }
 
-                        &:hover {
-                            a{
-                                text-decoration: underline;
-                            }
-                        }
-
                         .menu-toggle i {
                             color: #444444;
                             position: absolute;
@@ -188,19 +188,22 @@
                             transform: translateY(-50%);
                             text-align: center;
                         }
-                        .sub-menu{
+
+                        .sub-menu {
                             position: absolute;
                             left: 0;
                             background-color: #ffffff;
                             opacity: .97;
                             top: 100%;
-                            background-image:url('../../assets/images/background/box_shadow.png') ;
+                            background-image: url('../../assets/images/background/box_shadow.png');
                             z-index: 205;
-                            .menu-item{
+
+                            .menu-item {
                                 width: 200px;
                                 position: relative;
                                 padding-right: 0;
-                                &>a{
+
+                                & > a {
                                     text-align: left;
                                 }
                             }
