@@ -40,19 +40,8 @@
     </div>
     <!--end::Header-->
     <!--begin::Content-->
-    <div id="content" class="w-100 position-relative">
-        <div class="content__wrapper">
-            <div class="section__group">
-                <div class="section section-content">
-                    <div class="content__wrapper">
-                        @yield('content')
-                    </div>
-                </div>
-                <div class="section section-footer">
-                    @yield('content-footer')
-                </div>
-            </div>
-        </div>
+    <div id="content" class="w-100 position-relative z-0">
+            @yield('content')
     </div>
     <!--end::Content-->
     <!--begin::Footer-->

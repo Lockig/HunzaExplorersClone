@@ -50,7 +50,7 @@
                         </li>
                         <li class="menu-item">
                             <a href=""><span>Tours<span class="description">explore the world</span></span></a>
-                            <ul class="sub-menu d-block m-0 p-0">
+                            <ul class="sub-menu d-none m-0 p-0">
                                 <li class="menu-item">
                                     <a href=""><span>Pakistan</span></a>
                                     <ul class="sub-menu d-none"></ul>

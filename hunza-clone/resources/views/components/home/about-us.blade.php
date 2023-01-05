@@ -2,84 +2,39 @@
 
 
 @section('content')
-    <div class="about-us ">
-        <div class="container w-100">
-            <div class="about-us__content">
-                <div class="content">
-                    <div class="content__wrapper">
-                        <div class="content__wrapper--margin">
-                            <div class="d-flex">
-                                <div class="left">
-                                    <ul class="list flex-grow-1 overflow-hidden p-0">
-                                        <li class="list__item">
-                                            <a href="#">
-                                                <i></i>
-                                                <span>Introduction</span>
-                                            </a>
-                                        </li>
-                                        <li class="list__item">
-                                            <a href="#">
-                                                <i></i>
-                                                <span>Our Staff</span>
-                                            </a>
-                                        </li>
-                                        <li class="list__item">
-                                            <a href="#">
-                                                <i></i>
-                                                <span>Why us?</span>
-                                            </a>
-                                        </li>
-                                        <li class="list__item">
-                                            <a href="#">
-                                                <i></i>
-                                                <span>Terms & Conditions</span>
-                                            </a>
-                                        </li>
-                                        <li class="list__item">
-                                            <a href="#">
-                                                <i></i>
-                                                <span>FAQs</span>
-                                            </a>
-                                        </li>
-                                        <li class="list__item">
-                                            <a href="#">
-                                                <i></i>
-                                                <span>Safety Policy</span>
-                                            </a>
-                                        </li>
-                                        <li class="list__item">
-                                            <a href="#">
-                                                <i></i>
-                                                <span>Privacy Policy</span>
-                                            </a>
-                                        </li>
-                                        <li class="list__item">
-                                            <a href="#">
-                                                <i></i>
-                                                <span>Price</span>
-                                            </a>
-                                        </li>
-                                        <li class="list__item">
-                                            <a href="#">
-                                                <i class="fa fa-shopping-cart"></i>
-                                                <span>Payment</span>
-                                            </a>
-                                        </li>
-                                        <li class="list__item">
-                                            <a href="#">
-                                                <i></i>
-                                                <span>Cancellation/Refund</span>
-                                            </a>
-                                        </li>
-                                    </ul>
+    <div id="about-us">
+        <div class="section__group">
+            <div class="section section-content">
+                <div class="background">
+                    <div class="section__wrapper">
+                        <div class="content__wrapper">
+                            <div id="about-us-wrapper" class="position-relative">
+                                <div class="content">
+                                    <div class="content__inner">
+                                        <div class="d-flex">
+                                            <div class="content-left"></div>
+                                            <div class="content-right">
+                                                <div class="content-right-inside">
+                                                    <div class="inside-margin">
+                                                        <div class="title"></div>
+                                                        <div class="body">
+                                                            <div class="body-heading"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="empty-space"></div>
                                 </div>
-                                <div class="right"></div>
                             </div>
                         </div>
-                        <div class="content__wrapper--space content__wrapper--margin" style="height: 32px;">
-                            <span class="content__wrapper--inner"></span>
-                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="section section-footer">
+                <div class="column page-pager">
+                    <div class="col-inner"></div>
                 </div>
             </div>
         </div>

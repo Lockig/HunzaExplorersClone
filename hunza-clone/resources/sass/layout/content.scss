@@ -1,15 +1,58 @@
 @import 'variables';
 @import "main";
+
 #content {
+
+    padding-top: 30px;
+    background-color: $backgroundColor;
+
     &.no-content {
         padding: 0 !important;
     }
-    .section__group{
-        @include desktop{
-            margin:0;
+
+    .section__group {
+        @include desktop {
+            margin: 0;
             width: 100% !important;
         }
     }
-    padding-top: 30px;
-    background-color: $backgroundColor;
+    #about-us{
+        .background{
+            width: 100%;
+            overflow: visible !important;
+            background-image: url('../../assets/images/background/bgpic.png');
+            background-position: 0 0 !important;
+            background-repeat: repeat !important;
+        }
+        #about-us-wrapper {
+            width: 100%;
+            margin: 0 auto;
+            padding: 1px 0;
+            .content{
+                padding:35px 8px 0 8px;
+                margin-top: 20px;
+                background-color: #ffffff;
+                .content__inner{
+                    margin-bottom: 35px;
+                    .content-right{
+                        .content-right-inside{
+                            background: transparent;
+                            border-color: #cec2ab;
+                            border: 2px solid;
+                            border-left-color: transparent !important;
+                            .inside-margin{
+                                margin: -2px;
+                                .body{
+                                    padding: 14px 20px;
+                                    transform: translate3d(0,0,0);
+                                    transition: padding .2s ease-in-out;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }

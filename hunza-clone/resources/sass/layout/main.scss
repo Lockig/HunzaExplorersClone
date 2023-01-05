@@ -49,7 +49,7 @@ body {
     line-height: 25px;
     font-weight: 400;
     letter-spacing: 0;
-    @include tablet{
+    @include tablet {
         font-size: 13px;
         line-height: 19px;
     }
@@ -61,8 +61,11 @@ body {
 
 .section {
     position: relative;
+    background-position: 0 0;
+    background-repeat: no-repeat;
     box-sizing: border-box;
 }
+
 .section__wrapper {
     max-width: 1220px;
     margin: 0 auto;
@@ -70,18 +73,25 @@ body {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    @include tablet{
-        padding:0 33px !important;
-        max-width: 700px !important;
-    }
+    //@include desktop {
+    //    padding: 0 33px !important;
+    //    max-width: 700px !important;
+    //}
+    //@include tablet {
+    //    max-width: 940px;
+    //}
+    //@include mobile {
+    //    max-width: 708px;
+    //}
 
 }
 
 
 .content__wrapper {
-    &.has-content{
+    &.has-content {
         margin-bottom: 15px;
     }
+
     margin: 0 1%;
     width: 98%;
 }
@@ -104,6 +114,10 @@ body {
 .col-inner {
     position: relative;
     margin: 0 12px 40px 12px;
+
+    &.page-pager {
+        margin-bottom: 0 !important;
+    }
 }
 
 h4 {
@@ -112,4 +126,7 @@ h4 {
     font-weight: 500;
     letter-spacing: 0;
 }
-
+.empty-space{
+    height: 32px;
+    margin-bottom: 35px;
+}
