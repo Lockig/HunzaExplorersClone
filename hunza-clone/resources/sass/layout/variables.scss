@@ -1,8 +1,41 @@
+//responsive
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+//color
 $primaryColor: #41afaa;
 $primaryTextColor: #FFFFFF;
 $secondaryTextColor: #CCCCCC;
 $backgroundColor: #FCFCFC;
+$secondaryBackgroundColor: #2c2c2c;
 $headerBackgroundColor: #000119;
 $footerBackgroundColor: #292b33;
 $footerTextPrimaryColor: #cccccc;
 
+//font
+$primaryFont: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+
+$backgroundImage3: url('../../assets/images/background/bgpic.png');
+$backgroundImage2: url('../../assets/images/background/bg-new.png');
+$backgroundImage1: url('../../assets/images/background/bg-pages1.png');
+$boxShadow: url('../../assets/images/background/box_shadow.png');
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width -1px}) {
+        @content
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width -1px}) {
+        @content
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content
+    }
+}

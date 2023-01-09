@@ -5,7 +5,7 @@ mix.copyDirectory('resources/assets/images','public/assets/images').version();
 
 //css
 mix.sass('resources/sass/app.scss','public/assets/css/app.css').version();
-mix.sass('resources/sass/style.scss','public/assets/css/style.css').version();
+mix.sass('resources/sass/layout/layout.scss','public/assets/css/layout.css').version();
 // mix.styles('resources/css/app.css','public/assets/css/app.css').version();
 
 

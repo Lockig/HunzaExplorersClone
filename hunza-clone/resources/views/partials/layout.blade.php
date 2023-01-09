@@ -12,7 +12,7 @@
     <link href="{{asset('assets/css/bootstrap.css')}}" rel="stylesheet" type="text/css"/>
     <!--begin:CSS-->
     <link href="{{asset('assets/css/app.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{asset('assets/css/layout.css')}}" rel="stylesheet" type="text/css"/>
     <!--end:CSS-->
 
     @yield('css')
@@ -28,13 +28,13 @@
 <!--begin::Page-->
 {{--    <div class="d-flex flex-row">--}}
 <!--begin::Aside-->
-<div id="wrapper" class="w-100 m-0">
+<div id="wrapper">
     <div class="d-none body_overlay position-fixed top-0 left-0 w-100 h-120 z-9002" style="background: rgba(0,0,0,.6);"></div>
     <!--end::Aside-->
     <!--begin::Wrapper-->
     {{--        <div class="d-flex flex-column w-100">--}}
     <!--begin::Header-->
-    <div id="header__wrapper" class="position-relative">
+    <div id="header__wrapper">
         @include('partials.header')
         @include('partials.mobile-header')
     </div>
@@ -48,7 +48,7 @@
     <footer id="footer" >
         @include('partials.footer')
     </footer>
-
+    <div id="body_overlay" class="position-fixed top-0 left-0 w-100 d-none"></div>
     <!--end::Footer-->
 </div>
 <!--end::Wrapper-->

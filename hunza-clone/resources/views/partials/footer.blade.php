@@ -1,8 +1,9 @@
 <div class="footer__wrapper w-100 p-0">
-    <div class="container d-flex my-auto">
+    <div class="container d-flex">
         <div class="row w-100 row__inner">
             <div class="col-md-12 col-lg-3 my-4">
                 <div class="col-inner">
+                    <div class="col-inner__margin" style="margin: 30px 0;"></div>
                     <h4>Who we are</h4>
                     <div>
                         <ul>
@@ -17,6 +18,7 @@
             </div>
             <div class="col-md-12 col-lg-3 my-4">
                 <div class="col-inner">
+                    <div class="col-inner__margin" style="margin: 30px 0;"></div>
                     <h4 class="text-uppercase">Sightseeing tours</h4>
                     <div>
                         <ul>
@@ -33,6 +35,7 @@
             </div>
             <div class="col-md-12 col-lg-3 my-4">
                 <div class="col-inner">
+                    <div class="col-inner__margin" style="margin: 30px 0;"></div>
                     <h4 class="text-uppercase">autumn tours</h4>
                     <div>
                         <ul>
@@ -45,6 +48,7 @@
             </div>
             <div class="col-md-12 col-lg-3 my-4">
                 <div class="col-inner">
+                    <div class="col-inner__margin" style="margin: 30px 0;"></div>
                     <h4 class="text-uppercase">Jeep safari</h4>
                     <div>
                         <ul>
@@ -58,7 +62,7 @@
         </div>
     </div>
 </div>
-<div class="footer__copy">
+<div class="footer__copy w-100 position-relative">
     <div class="container my-auto">
         <div class="row flex-md-column-reverse flex-lg-row align-items-md-center">
             <div
