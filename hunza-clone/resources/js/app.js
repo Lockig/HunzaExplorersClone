@@ -33,7 +33,7 @@ const _mobileMenuToggle = function () {
         $('#side-slide').toggleClass('enabled');
     });
 //    close sidebar
-    $('.close').on('click', function (e) {
+    $('#side-slide .close').on('click', function (e) {
         e.preventDefault();
         e.stopPropagation();
         console.log('close side bar');
@@ -56,7 +56,7 @@ const _mobileMenuToggle = function () {
             $('.lang__wrapper').removeClass('enabled');
         }
     })
-//    toggle sub-menu sidbar
+//    toggle sub-menu sidebar
     $('#side-slide .menu__wrapper .menu-toggle').on('click', function (e) {
         e.preventDefault();
         var button = $(this).children('.element');
@@ -81,6 +81,19 @@ const _mobileMenuToggle = function () {
         console.log('hello login');
         e.preventDefault();
         $('#login').toggleClass('opened');
+    })
+//     focus input text
+    $('.form-group > input').on(function (e){
+        console.log('focus hello');
+        $(this).parent().children("label").toggleClass('active');
+    });
+
+    $('#login .close').on('click', function (e) {
+        console.log('close login')
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('close side bar');
+        $('#login').removeClass('opened');
     })
 }
 $(document).ready(function () {

@@ -29,7 +29,8 @@
 {{--    <div class="d-flex flex-row">--}}
 <!--begin::Aside-->
 <div id="wrapper">
-    <div class="d-none body_overlay position-fixed top-0 left-0 w-100 h-120 z-9002" style="background: rgba(0,0,0,.6);"></div>
+    <div class="d-none body_overlay position-fixed top-0 left-0 w-100 h-120 z-9002"
+         style="background: rgba(0,0,0,.6);"></div>
     <!--end::Aside-->
     <!--begin::Wrapper-->
     {{--        <div class="d-flex flex-column w-100">--}}
@@ -44,7 +45,7 @@
 
     <!--end::Content-->
     <!--begin::Footer-->
-    <footer id="footer" >
+    <footer id="footer">
         @include('partials.footer')
     </footer>
     <div id="body_overlay" class="position-fixed top-0 left-0 w-100 d-none"></div>
@@ -56,12 +57,16 @@
         </div>
         <div class="extras">
             <a href="#" target="_blank" class="d-block text-capitalize action-button">customize your TRIP</a>
-            <div class="extras__wrapper d-flex align-items-center flex-wrap justify-content-between">
-                <a href="#" class="account d-flex align-items-center">
-                    <i class="fa fa-regular fa-user"></i>
-                </a>
-                <a href="#" class="cart"></a>
-                <a href="#" class="lang-active">Language <i class="drop-btn fa fa-solid fa-angle-down"></i></a>
+            <div class="extras__wrapper d-flex justify-content-center align-items-center flex-wrap ">
+                <div class="d-flex w-100 justify-content-center">
+                    <a href="#" class="account d-flex align-items-center">
+                        <i class="fa fa-regular fa-user"></i>
+                    </a>
+                    <a href="#" class="cart"><i class="fa fa-light fa-bag-shopping"></i></a>
+                </div>
+
+                <a href="#" class="d-block text-center lang-active">Language <i
+                        class="drop-btn fa fa-solid fa-angle-down"></i></a>
             </div>
         </div>
         <div class="lang__wrapper">
@@ -86,7 +91,8 @@
                         </a>
                     </li>
                     <li class="w-100 position-relative">
-                        <a href="#" class="d-block"><span>Tours<span class="description d-block">explore the world</span></span></a>
+                        <a href="#" class="d-block"><span>Tours<span
+                                    class="description d-block">explore the world</span></span></a>
                         <ul class="sub-menu">
                             <li><a class="text-uppercase" href="#"><span>Pakistan</span></a></li>
                             <li><a class="text-uppercase" href="#"><span>Afghanistan</span></a></li>
@@ -96,14 +102,16 @@
                         </a>
                     </li>
                     <li class="w-100 position-relative">
-                        <a href="#" class="d-block"><span>Treks<span class="description d-block">full of adventure</span></span></a>
+                        <a href="#" class="d-block"><span>Treks<span
+                                    class="description d-block">full of adventure</span></span></a>
                         <ul class="sub-menu">
                             <li><a class="text-uppercase" href="#"><span>Pantundas Trek</span></a></li>
                             <li><a class="text-uppercase" href="#"><span>Batunra Trek</span></a></li>
                             <li><a class="text-uppercase" href="#"><span>Shimshal Pamir Trek</span></a></li>
                             <li><a class="text-uppercase" href="#"><span>Rakaposhi and Pantundass Trek</span></a></li>
                             <li><a class="text-uppercase" href="#"><span>Great Karakoram Traverse Trek</span></a></li>
-                            <li><a class="text-uppercase" href="#"><span>K2 Base Camp & Gondogoro La Trek</span></a></li>
+                            <li><a class="text-uppercase" href="#"><span>K2 Base Camp & Gondogoro La Trek</span></a>
+                            </li>
                             <li><a class="text-uppercase" href="#"><span>Biafo Hispar & Snow Lake Trek</span></a></li>
                             <li><a class="text-uppercase" href="#"><span>Round Nanaga Parbat Trek</span></a></li>
                             <li><a class="text-uppercase" href="#"><span>Nanga Parbat Base Camp Trek</span></a></li>
@@ -125,7 +133,8 @@
                         </a>
                     </li>
                     <li class="w-100 position-relative">
-                        <a href="#" class="d-block"><span>Expeditions<span class="description d-block">mountaineering</span></span></a>
+                        <a href="#" class="d-block"><span>Expeditions<span
+                                    class="description d-block">mountaineering</span></span></a>
                         <ul class="sub-menu">
                             <li><a class="text-uppercase" href="#"><span>Passu Peak Expedition</span></a></li>
                             <li><a class="text-uppercase" href="#"><span>Shishper Peak Expedition</span></a></li>
@@ -173,13 +182,35 @@
             <i class="fa fa-doutone fa-x"></i>
         </a>
         <h4 class="text-capitalize text-center">Login</h4>
-        <form method="#" action="#">
+        <form id="login-form" class="form" method="#" action="#">
             @csrf
-
+            <div class="form-group w-100 position-relative p-0">
+                <i class="d-block position-absolute fa fa-solid fa-user"></i>
+                <label class="d-block position-absolute" for="username">Username or email&nbsp;<span
+                        class="required">*</span></label>
+                <input class="w-100 m-0 form-control form-control-solid" id="username" name="username" type="text"/>
+            </div>
+            <div class="form-group w-100 position-relative p-0">
+                <i class="d-block position-absolute fa fa-solid fa-lock"></i>
+                <label class="d-block position-absolute" for="username">Password&nbsp;<span
+                        class="required">*</span></label>
+                <input class="w-100 m-0 form-control form-control-solid" id="username" name="username" type="password"/>
+                <span class="show-password position-absolute"><i class="fa fa-solid fa-eye"></i></span>
+            </div>
+            <div>
+                <label>
+                    <input id="remember" name="remember" type="checkbox"/>
+                    <span>Remember me</span>
+                </label>
+                <button class="d-block w-100" name="login" type="submit">Login</button>
+            </div>
+            <div class="lost-password text-center">
+                <a href="#">Lost your password?</a>
+            </div>
+            <p class="create-account m-0 text-center">
+                <a href="#">Create an account?</a>
+            </p>
         </form>
-        <p class="create_account m-0 text-center">
-            <a href="#">Create an account?</a>
-        </p>
     </div>
     <!--end::Footer-->
 </div>
