@@ -40,15 +40,147 @@
     </div>
     <!--end::Header-->
     <!--begin::Content-->
-    <div id="content" class="w-100 position-relative z-0">
-            @yield('content')
-    </div>
+    @yield('content')
+
     <!--end::Content-->
     <!--begin::Footer-->
     <footer id="footer" >
         @include('partials.footer')
     </footer>
     <div id="body_overlay" class="position-fixed top-0 left-0 w-100 d-none"></div>
+    <div id="side-slide" aria-expanded="false">
+        <div class="close-wrapper">
+            <a href="#" class="close">
+                <i class="fa fa-doutone fa-x"></i>
+            </a>
+        </div>
+        <div class="extras">
+            <a href="#" target="_blank" class="d-block text-capitalize action-button">customize your TRIP</a>
+            <div class="extras__wrapper d-flex align-items-center flex-wrap justify-content-between">
+                <a href="#" class="account d-flex align-items-center">
+                    <i class="fa fa-regular fa-user"></i>
+                </a>
+                <a href="#" class="cart"></a>
+                <a href="#" class="lang-active">Language <i class="drop-btn fa fa-solid fa-angle-down"></i></a>
+            </div>
+        </div>
+        <div class="lang__wrapper">
+            <ul>
+                <li><a class="d-block" href="#">Tiếng Việt</a></li>
+                <li><a class="d-block" href="#">Tiếng Anh</a></li>
+            </ul>
+        </div>
+        <div class="menu__wrapper">
+            <nav id="menu">
+                <ul class="w-100 mb-0">
+                    <li class="w-100 position-relative">
+                        <a href="#" class="d-block"><span>Home</span></a>
+                        <ul class="sub-menu">
+                            <li><a class="text-uppercase" href="#"><span>About us</span></a></li>
+                            <li><a class="text-uppercase" href="#"><span>Our Team</span></a></li>
+                            <li><a class="text-uppercase" href="#"><span>Testimonials</span></a></li>
+                            <li><a class="text-uppercase" href="#"><span>CEO Message</span></a></li>
+                        </ul>
+                        <a class="menu-toggle d-block position-absolute m-0 p-0">
+                            <i class="element fa fa-duotone fa-plus"></i>
+                        </a>
+                    </li>
+                    <li class="w-100 position-relative">
+                        <a href="#" class="d-block"><span>Tours<span class="description d-block">explore the world</span></span></a>
+                        <ul class="sub-menu">
+                            <li><a class="text-uppercase" href="#"><span>Pakistan</span></a></li>
+                            <li><a class="text-uppercase" href="#"><span>Afghanistan</span></a></li>
+                        </ul>
+                        <a class="menu-toggle d-block position-absolute m-0 p-0">
+                            <i class="element fa fa-duotone fa-plus"></i>
+                        </a>
+                    </li>
+                    <li class="w-100 position-relative">
+                        <a href="#" class="d-block"><span>Treks<span class="description d-block">full of adventure</span></span></a>
+                        <ul class="sub-menu">
+                            <li><a class="text-uppercase" href="#"><span>Pantundas Trek</span></a></li>
+                            <li><a class="text-uppercase" href="#"><span>Batunra Trek</span></a></li>
+                            <li><a class="text-uppercase" href="#"><span>Shimshal Pamir Trek</span></a></li>
+                            <li><a class="text-uppercase" href="#"><span>Rakaposhi and Pantundass Trek</span></a></li>
+                            <li><a class="text-uppercase" href="#"><span>Great Karakoram Traverse Trek</span></a></li>
+                            <li><a class="text-uppercase" href="#"><span>K2 Base Camp & Gondogoro La Trek</span></a></li>
+                            <li><a class="text-uppercase" href="#"><span>Biafo Hispar & Snow Lake Trek</span></a></li>
+                            <li><a class="text-uppercase" href="#"><span>Round Nanaga Parbat Trek</span></a></li>
+                            <li><a class="text-uppercase" href="#"><span>Nanga Parbat Base Camp Trek</span></a></li>
+                            <li><a class="text-uppercase" href="#"><span>Rush Lake Trek Trek</span></a></li>
+                        </ul>
+                        <a class="menu-toggle d-block position-absolute m-0 p-0">
+                            <i class="element fa fa-duotone fa-plus"></i>
+                        </a>
+                    </li>
+                    <li class="w-100 position-relative">
+                        <a href="#" class="d-block"><span>Safaris<span class="description d-block">explore remote valleys</span></span></a>
+                        <ul class="sub-menu">
+                            <li><a class="text-uppercase" href="#"><span>Hunza Khunjerab jeep Safari</span></a></li>
+                            <li><a class="text-uppercase" href="#"><span>Deosai Jeep Safari</span></a></li>
+                            <li><a class="text-uppercase" href="#"><span>North Pakistan Jeep Safari</span></a></li>
+                        </ul>
+                        <a class="menu-toggle d-block position-absolute m-0 p-0">
+                            <i class="element fa fa-duotone fa-plus"></i>
+                        </a>
+                    </li>
+                    <li class="w-100 position-relative">
+                        <a href="#" class="d-block"><span>Expeditions<span class="description d-block">mountaineering</span></span></a>
+                        <ul class="sub-menu">
+                            <li><a class="text-uppercase" href="#"><span>Passu Peak Expedition</span></a></li>
+                            <li><a class="text-uppercase" href="#"><span>Shishper Peak Expedition</span></a></li>
+                        </ul>
+                        <a class="menu-toggle d-block position-absolute m-0 p-0">
+                            <i class="element fa fa-duotone fa-plus"></i>
+                        </a>
+                    </li>
+                    <li class="w-100 position-relative">
+                        <a href="#" class="d-block"><span>Contact us</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contact-detail">
+            <ul class="text-center">
+                <li>Dream - Discover - Explore</li>
+                <li>
+                    <i class="fa fa-phone text-white "></i>
+                    <a href="/">+92 333 5626529</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone text-white"></i>
+                    <a href="/">+92344118612</a>
+                </li>
+                <li>
+                    <i class="text-white fa fa-mail-bulk"></i>
+                    <a href="/">hunzaexplorers@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social-menu">
+            <ul class="text-center">
+                <li>
+                    <a class="text-white" href="/">Tiếng Việt</a>
+                </li>
+                <li>
+                    <a class="text-white" href="/">English</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="login" class="d-flex flex-column position-fixed top-0 mt-0 h-100" aria-expanded="false">
+        <a class="close">
+            <i class="fa fa-doutone fa-x"></i>
+        </a>
+        <h4 class="text-capitalize text-center">Login</h4>
+        <form method="#" action="#">
+            @csrf
+
+        </form>
+        <p class="create_account m-0 text-center">
+            <a href="#">Create an account?</a>
+        </p>
+    </div>
     <!--end::Footer-->
 </div>
 <!--end::Wrapper-->

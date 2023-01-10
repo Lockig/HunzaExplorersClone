@@ -8,6 +8,8 @@ mix.sass('resources/sass/app.scss','public/assets/css/app.css').version();
 mix.sass('resources/sass/layout/layout.scss','public/assets/css/layout.css').version();
 // mix.styles('resources/css/app.css','public/assets/css/app.css').version();
 
+//component
+mix.sass('resources/sass/component/message.scss','public/assets/css/component/home/message.css').version();
 
 //js
 mix.js([

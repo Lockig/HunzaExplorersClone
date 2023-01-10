@@ -1,4 +1,3 @@
-
 // import 'owl.carousel';
 var $ = require('jquery');
 
@@ -23,16 +22,68 @@ var $ = require('jquery');
 //         }
 //     }
 // }
-var _mobileMenuToggle = function(){
+const _mobileMenuToggle = function () {
     console.log('hello');
-    $('.hamburger').on('click',function(e){
+    //open sidebar
+    $('.hamburger').on('click', function (e) {
         console.log('toggle side bar');
+        e.stopPropagation();
         e.preventDefault();
-        $('.body_overlay').addClass('d-md-block');
-        $('#side-bar').toggleClass('enabled');
+        $('#body_overlay').toggleClass('toggle');
+        $('#side-slide').toggleClass('enabled');
     });
+//    close sidebar
+    $('.close').on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('close side bar');
+        $('#body_overlay').removeClass('toggle');
+        $('#side-slide').removeClass('enabled');
+    })
+//    sidebar language drop down
+    $('.lang-active').on('click', function (e) {
+        e.preventDefault();
+        console.log('hello');
+        var kid = $('.lang-active > i ');
+        console.log(kid);
+        if (kid.hasClass('fa-angle-down')) {
+            kid.removeClass('fa-angle-down');
+            kid.addClass('fa-angle-up');
+            $('.lang__wrapper').addClass('enabled');
+        } else if (kid.hasClass('fa-angle-up')) {
+            kid.removeClass('fa-angle-up');
+            kid.addClass('fa-angle-down');
+            $('.lang__wrapper').removeClass('enabled');
+        }
+    })
+//    toggle sub-menu sidbar
+    $('#side-slide .menu__wrapper .menu-toggle').on('click', function (e) {
+        e.preventDefault();
+        var button = $(this).children('.element');
+        var subMenu = $(this).parent().children('.sub-menu');
+        if (button.hasClass('fa-plus')) {
+            button.removeClass('fa-plus');
+            button.addClass('fa-minus');
+            subMenu.addClass('enabled');
+            $(this).parent().children("a").addClass('text-black');
+            $(this).parent().addClass("enabled");
+        } else if (button.hasClass('fa-minus')) {
+            button.removeClass('fa-minus');
+            button.addClass('fa-plus');
+            subMenu.removeClass('enabled');
+            $(this).parent().removeClass("enabled");
+            $(this).parent().children("a").removeClass('text-black');
+        }
+    })
+
+//    toggle login sidebar
+    $('.account').on('click', function (e) {
+        console.log('hello login');
+        e.preventDefault();
+        $('#login').toggleClass('opened');
+    })
 }
-$(document).ready(function(){
+$(document).ready(function () {
     // App.initCore();
     _mobileMenuToggle();
 })

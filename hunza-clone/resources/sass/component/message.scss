@@ -1,0 +1,38 @@
+@import "./resources/sass/layout/layout";
+
+#content{
+    background-color: $backgroundColor;
+}
+.section__wrapper {
+    @include tablet {
+        max-width: 700px !important;
+        padding-left: 33px !important;
+        padding-right: 33px !important;
+    }
+    .left-panel{
+        h1{
+            font-size: 22px !important;
+            text-align: left;
+            font-family: Roboto,sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin: 10px 0 !important;
+            color: #161922;
+            line-height: 50px;
+        }
+        p{
+            a{
+
+            }
+        }
+    }
+    .right-panel{
+        .image{
+            margin-bottom: 35px;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
