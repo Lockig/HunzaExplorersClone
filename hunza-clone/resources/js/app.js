@@ -22,6 +22,13 @@ var $ = require('jquery');
 //         }
 //     }
 // }
+const App = function(){
+    return {
+        initSideBar: function (){
+            _mobileMenuToggle();
+        }
+    }
+}
 const _mobileMenuToggle = function () {
     console.log('hello');
     //open sidebar

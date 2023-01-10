@@ -192,7 +192,7 @@
             </div>
             <div class="form-group w-100 position-relative p-0">
                 <i class="d-block position-absolute fa fa-solid fa-lock"></i>
-                <label class="d-block position-absolute" for="username">Password&nbsp;<span
+                <label class="d-block position-absolute" for="password">Password&nbsp;<span
                         class="required">*</span></label>
                 <input class="w-100 m-0 form-control form-control-solid" id="username" name="username" type="password"/>
                 <span class="show-password position-absolute"><i class="fa fa-solid fa-eye"></i></span>
