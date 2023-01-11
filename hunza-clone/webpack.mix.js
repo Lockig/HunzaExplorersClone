@@ -10,6 +10,7 @@ mix.sass('resources/sass/layout/layout.scss','public/assets/css/layout.css').ver
 
 //component
 mix.sass('resources/sass/component/message.scss','public/assets/css/component/home/message.css').version();
+mix.sass('resources/sass/component/contact-us.scss','public/assets/css/component/home/contact-us.css').version();
 
 //js
 mix.js([

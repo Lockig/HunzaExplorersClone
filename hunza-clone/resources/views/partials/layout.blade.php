@@ -178,7 +178,7 @@
         </div>
     </div>
     <div id="login" class="d-flex flex-column position-fixed top-0 mt-0 h-100" aria-expanded="false">
-        <a class="close">
+        <a class="close pointer-event">
             <i class="fa fa-doutone fa-x"></i>
         </a>
         <h4 class="text-capitalize text-center">Login</h4>
@@ -211,6 +211,8 @@
                 <a href="#">Create an account?</a>
             </p>
         </form>
+    </div>
+    <div id="cart" class="d-flex flex-column position-fixed top-0 mt-0 h-100" aria-expanded="false">
     </div>
     <!--end::Footer-->
 </div>

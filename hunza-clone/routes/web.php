@@ -24,7 +24,7 @@ Route::group(['prefix'=>'/'],function(){
 
 
 //    expeditions
-    Route::get('/expeditions-pakistan', function () {return view('partials.error');})->name('about-us');
+    Route::get('/expeditions-pakistan', function () {return view('components.expeditions.expeditions');})->name('about-us');
     Route::get('/passu-peak-expedition', function () {return view('partials.error');})->name('about-us');
     Route::get('/shispareshishper-peak-expedition', function () {return view('partials.error');})->name('about-us');
 });
@@ -56,8 +56,8 @@ Route::group(['prefix' => 'trek'], function () {
 
 //safaris
 Route::group(['prefix' => 'safari'], function () {
-    Route::get('/', function () {return view('partials.error');});
-    Route::get('/hunza-khunjerab-jeep-safari', function () {return view('partials.error');});
+    Route::get('/', function () {return view('components.safaris.safari');});
+    Route::get('/hunza-khunjerab-jeep-safari', function () {return view('components.safaris.safari');});
     Route::get('/deosai-jeep-safari', function () {return view('partials.error');});
     Route::get('/north-pakistan-jeep-safari', function () {return view('partials.error');});
 });

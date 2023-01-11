@@ -1,0 +1,95 @@
+@import '../../sass/layout/layout';
+#contact-us {
+    .section {
+        background-color: #eaeaea;
+        background-image: url("../../assets/images/background/bg-pages1.png");
+        background-repeat: repeat;
+        background-position: center;
+        border-style: none;
+        border-color: #333333;
+        border-width: 1px 1px 1px 1px;
+    }
+
+    .content-wrapper {
+        margin-top: 25px;
+
+        &.map {
+            border-style: solid;
+            border-color: #333333;
+            border-width: 1px;
+            box-shadow: 2px 2px 5px 2px #333333;
+        }
+        .title{
+            font-size: 42px;
+            margin-bottom: 15px;
+            line-height: 42px;
+            font-family: $primaryFont;
+            color: $primaryColor !important;
+            text-transform: uppercase;
+            font-weight: 400;
+            text-align: center;
+            background: -webkit-linear-gradient(#eaeaea , $primaryColor);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .inside{
+            font-weight: 600;
+            color: rgb(168,168,168);
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+        }
+    }
+    .contact-us-form-wrapper{
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #333333;
+        background-color: #d2d0d0;
+        .contact-us-form{
+            p{
+                font-weight: bold;
+            }
+            .form-group{
+                margin: 0 0 15px;
+                .form-group-wrapper{
+                    margin-bottom: 3px;
+                    input, textarea{
+                        display: block;
+                        width: 100%;
+                        border-radius: 0 !important;
+                        outline: none;
+                        padding-top: 10px;
+                        font-size: 15px;
+                        margin: 0 0 20px;
+                    }
+                    .captcha-image{
+                        border: 1px solid;
+                        display: inline-block;
+                        padding: 10px;
+                        label{
+                            display: inline-block !important;
+                            width: 60px !important;
+                            margin-bottom: 5px;
+                            font-weight: 500;
+                            position: relative;
+                            &>input{
+                                opacity: 0;
+                                margin: 0;
+                                width: 50px;
+                                height: 50px;
+                                position: absolute;
+                                &+svg{
+                                    cursor:pointer;
+                                    border: 2px solid transparent;
+                                    padding-top: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

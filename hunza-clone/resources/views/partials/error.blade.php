@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"/>
     <style>
         body {
+            height: 100vh;
             background-image: url("{{asset('assets/images/background/bg-pages1.png')}}");
             background-repeat: repeat;
             background-size: auto;
@@ -19,7 +20,6 @@
         }
 
         #error {
-            margin-top: -150px;
             left: 30px;
         }
 
