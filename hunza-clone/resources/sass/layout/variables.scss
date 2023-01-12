@@ -23,19 +23,19 @@ $backgroundImage1: url('../../assets/images/background/bg-pages1.png');
 $boxShadow: url('../../assets/images/background/box_shadow.png');
 
 @mixin mobile {
-    @media (max-width: #{$mobile-width -1px}) {
+    @media (max-width: 479px) {
         @content
     }
 }
 
 @mixin tablet {
-    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width -1px}) {
+    @media (min-width: 767px) and (max-width: 1023px) {
         @content
     }
 }
 
 @mixin desktop {
-    @media (min-width: #{$desktop-width}) {
+    @media (min-width: 1024px) {
         @content
     }
 }

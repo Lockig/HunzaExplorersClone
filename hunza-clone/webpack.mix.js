@@ -11,6 +11,7 @@ mix.sass('resources/sass/layout/layout.scss','public/assets/css/layout.css').ver
 //component
 mix.sass('resources/sass/component/message.scss','public/assets/css/component/home/message.css').version();
 mix.sass('resources/sass/component/contact-us.scss','public/assets/css/component/home/contact-us.css').version();
+mix.sass('resources/sass/component/home/home.scss','public/assets/css/component/home/home.css').version();
 
 //js
 mix.js([
@@ -18,6 +19,9 @@ mix.js([
     'resources/js/bootstrap.js',
     'resources/js/app.js',
 ],'public/assets/js/app.js').version();
+
+mix.js('resources/js/component/home/home.js','public/assets/js/home.js').version();
+
 // mix.js('node_modules/owl.carousel/dist/owl.carousel.min.js','').version();
 
 //font-awesome
