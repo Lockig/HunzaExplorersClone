@@ -175,9 +175,12 @@
                                 font-family: Roboto, sans-serif;
 
                                 & > span {
+                                    font-size: 15px;
+                                    font-weight: 400;
+                                    color: black;
                                     display: block;
                                     line-height: inherit;
-                                    padding: 0 20px;
+                                    padding: 0 20px 0 5px;
                                     border-right-width: 1px;
                                     border-color: rgb(0, 0, 0, .05);
                                     border-right-style: solid;
@@ -745,7 +748,7 @@
     margin: 0 auto;
     position: relative;
     @include tablet {
-        max-width: 550px !important;
+        max-width: 100%;
         padding: 0 33px !important;
     }
 }
@@ -800,4 +803,7 @@ button {
         color: $primaryTextColor;
         background-color: $primaryColor;
     }
+}
+.wrapper-5{
+    padding: 5px;
 }
