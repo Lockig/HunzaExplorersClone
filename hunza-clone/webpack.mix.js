@@ -13,6 +13,7 @@ mix.sass('resources/sass/component/message.scss','public/assets/css/component/ho
 mix.sass('resources/sass/component/contact-us.scss','public/assets/css/component/home/contact-us.css').version();
 mix.sass('resources/sass/component/home/home.scss','public/assets/css/component/home/home.css').version();
 mix.sass('resources/sass/component/trek/patundass.scss','public/assets/css/component/trek/patundass.css').version();
+mix.sass('resources/sass/component/tour/tour.scss','public/assets/css/component/tour/tour.css').version();
 
 //js
 mix.js([

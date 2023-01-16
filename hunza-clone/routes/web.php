@@ -18,7 +18,7 @@ Route::group(['prefix'=>'/'],function(){
     Route::get('/testimonials', function () {return view('components.home.testimonials');})->name('testimonials');
     Route::get('/ceo-message', function () {return view('components.home.message');})->name('message');
     Route::get('/team', function () {return view('components.home.team');})->name('team');
-
+    Route::get('/tours',function(){return view('components.tour.tour');});
     Route::get('/pakistan-tourism', function () {return view('partials.error');})->name('error');
     Route::get('/hunza-tour', function () {return view('components.tour.afghanistan.hunza-valley');})->name('hunza');
 

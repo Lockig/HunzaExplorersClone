@@ -1,0 +1,40 @@
+@import '../../layout/layout';
+
+
+#tour {
+    .empty-space {
+        height: 55px;
+    }
+
+    .fancy-heading {
+        padding-bottom: 15px;
+        margin-bottom: 35px;
+        background-image: url('../../../assets/images/background/fancy_heading_hr.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+        .slogan {
+            color: #a8a8a8;
+            margin-bottom: 7px;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+
+        .title {
+            color: $primaryColor;
+            font-size: 42px;
+            line-height: 42px;
+            background: -webkit-linear-gradient(#eaeaea, $primaryColor);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .small-heading {
+            margin-bottom: 15px;
+            color: #a8a8a8;
+        }
+    }
+
+}
+
+
